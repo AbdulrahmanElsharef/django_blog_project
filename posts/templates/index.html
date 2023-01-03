@@ -1,0 +1,13 @@
+<html>
+  <head> </head>
+  <body>
+    <h1>بسم الله الرحمن الرحيم</h1>
+    {% for obj in objects %}
+    <h3>{{obj.title}}</h3>
+    <p>{{obj.contents}}</p>
+    <img id="img" src="{{obj.image.url}}" alt="obj image" />
+    <h4>{{obj.author}}</h4>
+    <hr />
+    {% endfor %}
+  </body>
+</html>
