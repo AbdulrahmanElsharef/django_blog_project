@@ -1,0 +1,6 @@
+<h3>Edit Post</h3>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{save}}
+    <input type="submit" value="Save">
+</form>

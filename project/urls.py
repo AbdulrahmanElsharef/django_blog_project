@@ -17,12 +17,14 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from posts.views import all_posts, post_content
+from posts.views import all_posts, post_content, add_post, edit_post
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('posts', all_posts),
+    path('posts/add', add_post),
     path('posts/<int:post_id>', post_content),
+    path('posts/<int:post_id>/edit', edit_post)
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
