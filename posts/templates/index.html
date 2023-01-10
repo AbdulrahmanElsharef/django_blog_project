@@ -4,6 +4,9 @@
 
 <body>
   <h1>بسم الله الرحمن الرحيم</h1>
+  <a href="/posts/add">
+    <button>Add New Book</button>
+  </a>
   {% for obj in objects %}
   <h3>
     <a href="/posts/{{obj.slug}}">{{obj.title}}</a>
@@ -14,7 +17,6 @@
   <hr />
 
   {% endfor %}
-  <h2><a href="/posts/add">Add New Post</a> </h2>
 
 </body>
 

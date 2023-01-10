@@ -8,9 +8,15 @@
   <p>{{obj.contents}}</p>
   <img id="img" src="{{obj.image.url}}" alt="object image" />
   <hr>
-  <h4><a href="/posts/{{obj.slug}}/edit">Edit Post</a> </h4>
-  <h4><a href="/posts/{{obj.slug}}/del">Delete Post</a> </h4>
-
+  <a href="/posts/{{obj.slug}}/edit">
+    <button>Edit post</button>
+  </a>
+  <a href="/posts/{{obj.slug}}/del">
+    <button>Delete post</button>
+  </a>
+  <a href="/posts">
+    <button>Back Home</button>
+  </a>
 </body>
 
 </html>
